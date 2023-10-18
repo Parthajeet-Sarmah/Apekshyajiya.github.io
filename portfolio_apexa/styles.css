@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'font';
+    src: url('font/Space_Mono/SpaceMono-Bold.ttf');
+}
+@font-face {
+    font-family: 'namefont';
+    src: url('font/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+.bg{
+    height: 60vh;
+    width:100
+}
+body{
+    opacity: 100%;
+    background-image: url(pastelsky.jpg);
+    background-size: 500% 500%;
+    animation: bg 60s ease-in-out infinite;
+}
+@keyframes bg{
+    0%{
+        background-position: 0 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.topnav{
+    font-family: 'font';
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    line-height: 80px;
+    height: 80px;
+    z-index: 111;
+}
+.topnav li{
+    list-style: none;
+    margin:0 15px;
+}
+.topnav li a{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.topnav li:hover a{
+    color: blueviolet;
+    transform: scale(20%);
+}
+#name{
+    font-family: 'namefont';
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    color:black;
+    letter-spacing: 4px;
+    cursor: auto;
+}
+.top{
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow:hidden;
+}
+.cols cols0{
+    width:50%;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color:blueviolet
+}
+.topline::after{
+    position: absolute;
+    content: ' ';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: blueviolet;
+}
+h1{
+    display: block;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'font';
+}
+.text{
+    color:blueviolet;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+p{
+    font-family: 'font';
+    font-weight: bold;
+}
+#lines{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+}
+h4{
+    display: block;
+    font-weight: 900;
+    font-family: 'font';
+}
+content.h3
+{
+    margin: 20px;
+    font-family: 'namefont';
+}
+.content{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'namefont';
+    display: grid;
+    grid-template-rows: 40px 420px 40px 420px;
+    grid-template-columns: 520px 290px 520px 520px;
+}
+#project
+{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+#line1
+{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+#web
+{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+#line2
+{
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+#part
+{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 2;
+}
+#line3
+{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+}
+#hobby
+{
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-row-end: 5;
+    grid-column-end: 4;
+}
+#line4
+{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-row-end: 4;
+    grid-column-end: 4;
+}
+#write
+{
+    font-family: 'font';
+    display: block;
+    font-weight: 900;
+}
+.bottomnav
+{
+    font-family: 'namefont';
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 300px 130px 750px 80px 60px 60px 60px 60px;
+    font-weight: 900;
+    color: blueviolet;
+}
+.form_button {
+    grid-row: 1/ 2 ;
+    grid-column: 2/3;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'namefont';
+    border: 3px;
+    font-size: 16px;
+    padding: 10px 10px;
+    color: blueviolet; 
+    border: 2px solid blueviolet;
+  }
+  
+  .form_button:hover {
+    background-color: blueviolet;
+    color: black;
+  }
+#ig
+{
+    grid-row: 1/ 2 ;
+    grid-column: 4/5;
+}
+#git
+{
+    grid-row: 1/ 2 ;
+    grid-column: 5/6;
+}
+#ld
+{
+    grid-row: 1/ 2 ;
+    grid-column: 6/7;
+}
+#pin
+{
+    grid-row: 1/ 2 ;
+    grid-column: 7/8;
+}
